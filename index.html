@@ -1,1 +1,283 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohval Hub - Jeans para mujer en TikTok Shop México</title>
+    <!-- Bootstrap 5.3.3 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts - Alternativas a Daily Shine, America y Monkey -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;600;700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <style>
+        /* ESTILOS PERSONALIZADOS CON LA PALETA DE OHVAL */
+        
+        :root {
+            --ohval-coral: #FF6B6B;
+            --ohval-coral-oscuro: #E85555;
+            --ohval-crema: #FDF8F0;
+            --ohval-azul: #1A2A3A;
+            --ohval-mostaza: #F4C542;
+            --ohval-gris: #5A6B7A;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--ohval-crema);
+            color: var(--ohval-azul);
+        }
+        
+        /* Tipografía para títulos (alternativa a Daily Shine) */
+        h1, h2, h3, .fuente-daily {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+        
+        /* Tipografía para destacados (alternativa a America) */
+        .fuente-america {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+        
+        /* Tipografía decorativa (alternativa a Monkey) */
+        .fuente-monkey {
+            font-family: 'Rubik Mono One', monospace;
+            letter-spacing: 1px;
+        }
+        
+        /* Navbar con color azul Ohval */
+        .navbar-ohval {
+            background-color: var(--ohval-azul) !important;
+        }
+        
+        .navbar-ohval .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+            color: var(--ohval-coral) !important;
+        }
+        
+        /* Botón principal color coral Ohval */
+        .btn-ohval {
+            background-color: var(--ohval-coral);
+            border-color: var(--ohval-coral);
+            color: white;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-ohval:hover {
+            background-color: var(--ohval-coral-oscuro);
+            border-color: var(--ohval-coral-oscuro);
+            color: white;
+            transform: scale(1.02);
+        }
+        
+        /* Hero section con degradado Ohval */
+        .hero-ohval {
+            background: linear-gradient(135deg, var(--ohval-coral) 0%, var(--ohval-mostaza) 100%);
+            color: white;
+        }
+        
+        /* Tarjetas con borde en color coral */
+        .card-ohval {
+            border: none;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card-ohval:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+        }
+        
+        .card-ohval .btn-primary {
+            background-color: var(--ohval-azul);
+            border-color: var(--ohval-azul);
+            transition: all 0.3s ease;
+        }
+        
+        .card-ohval .btn-primary:hover {
+            background-color: var(--ohval-coral);
+            border-color: var(--ohval-coral);
+        }
+        
+        /* Sección afiliados */
+        .bg-afiliados {
+            background-color: var(--ohval-crema);
+            border-top: 4px solid var(--ohval-coral);
+        }
+        
+        /* Footer */
+        .footer-ohval {
+            background-color: var(--ohval-azul);
+            color: white;
+        }
+        
+        .badge-mostaza {
+            background-color: var(--ohval-mostaza);
+            color: var(--ohval-azul);
+        }
+    </style>
+</head>
+<body>
 
+    <!-- ==================== HEADER / NAVBAR ==================== -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-ohval py-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-3" href="#">OHVAL <span style="color: #F4C542;">HUB</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link text-white" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#productos">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#afiliados">Afiliados</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main>
+
+        <!-- ==================== HERO SECTION ==================== -->
+        <section id="inicio" class="hero-ohval text-center py-5">
+            <div class="container py-5">
+                <h1 class="display-4 fw-bold">Jeans que te hacen brillar ✨</h1>
+                <p class="lead mt-3">Descubre la mejor moda en jeans para mujer. Calidad, estilo y comodidad en cada prenda. Encuéntranos en TikTok Shop México.</p>
+                <a href="https://www.tiktok.com/@ohval.mx" target="_blank" class="btn btn-light btn-lg mt-3 fw-bold">Ver nuestro TikTok ➡️</a>
+            </div>
+        </section>
+
+        <!-- ==================== CARDS SECTION (6 productos) ==================== -->
+        <section id="productos" class="container my-5 py-4">
+            <h2 class="text-center mb-5 fuente-daily" style="color: var(--ohval-azul);">🔥 Nuestros Jeans más vendidos</h2>
+            <div class="row g-4">
+                
+                <!-- Card 1 - Wide leg de mezclilla -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card card-ohval h-100 shadow-sm">
+                        <!-- CAMBIA ESTA IMAGEN POR LA URL REAL DE TIKTOK SHOP -->
+                        <img src="https://placehold.co/400x200/FF6B6B/FFFFFF?text=Wide+Leg+Mezclilla" class="card-img-top" alt="Wide leg de mezclilla Ohval">
+                        <div class="card-body">
+                            <h5 class="card-title fuente-america">Wide leg de mezclilla</h5>
+                            <p class="card-text">Corte wide leg de mezclilla 100% algodón. Comodidad y elegancia que estiliza tu figura. No aprieta el abdomen. Ideal todo el día.</p>
+                            <a href="https://vt.tiktok.com/ZS98t27gw6C86-mjhMW/" target="_blank" class="btn btn-primary w-100">Ver en TikTok Shop</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 2 - Mom Fit -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card card-ohval h-100 shadow-sm">
+                        <!-- CAMBIA ESTA IMAGEN POR LA URL REAL DE TIKTOK SHOP -->
+                        <img src="https://placehold.co/400x200/1A2A3A/FFFFFF?text=Mom+Fit" class="card-img-top" alt="Mom Fit Ohval">
+                        <div class="card-body">
+                            <h5 class="card-title fuente-america">Mom Fit</h5>
+                            <p class="card-text">Tiro alto, cadera suelta y pierna ligeramente afilada. Favorece todo tipo de cuerpos. Con micro elastano que no se marca ni se baja.</p>
+                            <a href="https://vt.tiktok.com/ZS98tjBfNCj2G-XbXYa/" target="_blank" class="btn btn-primary w-100">Ver en TikTok Shop</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 3 - Brillos -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card card-ohval h-100 shadow-sm">
+                        <!-- CAMBIA ESTA IMAGEN POR LA URL REAL DE TIKTOK SHOP -->
+                        <img src="https://placehold.co/400x200/F4C542/1A2A3A?text=Brillos" class="card-img-top" alt="Jeans con brillos Ohval">
+                        <div class="card-body">
+                            <h5 class="card-title fuente-america">Brillos</h5>
+                            <p class="card-text">Acabado brillante / efecto metalizado. Mezclilla flexible que capta las luces. Ideal para noche o looks atrevidos. Lava en frío y al revés.</p>
+                            <a href="https://vt.tiktok.com/ZS98tjUvpHoF1-kPd2t/" target="_blank" class="btn btn-primary w-100">Ver en TikTok Shop</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 4 - Wide leg blanco -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card card-ohval h-100 shadow-sm">
+                        <!-- CAMBIA ESTA IMAGEN POR LA URL REAL DE TIKTOK SHOP -->
+                        <img src="https://placehold.co/400x200/FDF8F0/1A2A3A?text=Wide+Leg+Blanco" class="card-img-top" alt="Wide leg blanco Ohval">
+                        <div class="card-body">
+                            <h5 class="card-title fuente-america">Wide leg blanco</h5>
+                            <p class="card-text">El wide leg blanco que necesitas. Fresco, ligero, combinable y no es transparente. Ideal para looks playeros, vacaciones u oficina en calor.</p>
+                            <a href="https://vt.tiktok.com/ZS98tjaYPyK6P-i2nvz/" target="_blank" class="btn btn-primary w-100">Ver en TikTok Shop</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 5 - Mom jean -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card card-ohval h-100 shadow-sm">
+                        <!-- CAMBIA ESTA IMAGEN POR LA URL REAL DE TIKTOK SHOP -->
+                        <img src="https://placehold.co/400x200/5A6B7A/FFFFFF?text=Mom+Jean" class="card-img-top" alt="Mom jean Ohval">
+                        <div class="card-body">
+                            <h5 class="card-title fuente-america">Mom jean</h5>
+                            <p class="card-text">Tiro alto, ajuste perfecto. Más suave al tacto, con bolsillos delanteros funcionales. Cadera holgada que se afila sutilmente. El básico ideal.</p>
+                            <a href="https://vt.tiktok.com/ZS98tj92RSH7y-8DGxC/" target="_blank" class="btn btn-primary w-100">Ver en TikTok Shop</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 6 - Barrel negro -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card card-ohval h-100 shadow-sm">
+                        <!-- CAMBIA ESTA IMAGEN POR LA URL REAL DE TIKTOK SHOP -->
+                        <img src="https://placehold.co/400x200/FFB6C1/1A2A3A?text=Barrel+Negro" class="card-img-top" alt="Barrel negro Ohval">
+                        <div class="card-body">
+                            <h5 class="card-title fuente-america">Barrel negro</h5>
+                            <p class="card-text">Jean barrel (pierna de barril) en negro. La tendencia más fuerte. Silueta redondeada en la pantorrilla y ajustado en tobillo. Nadie más lo tiene.</p>
+                            <a href="https://vt.tiktok.com/ZS98tj9KFDw6o-e2qEb/" target="_blank" class="btn btn-primary w-100">Ver en TikTok Shop</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SECCIÓN DE AFILIADOS ==================== -->
+        <section id="afiliados" class="bg-afiliados py-5">
+            <div class="container text-center">
+                <h2 class="fw-bold mb-3 fuente-daily" style="color: var(--ohval-coral);">💸 ¿Quieres ganar dinero con nosotros?</h2>
+                <p class="lead mb-4">Únete a nuestro programa de afiliados. Promociona nuestros jeans en TikTok y gana el 15% de comisión por cada venta.</p>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="card shadow" style="border-radius: 20px; border-top: 4px solid var(--ohval-mostaza);">
+                            <div class="card-body p-4">
+                                <h5 class="card-title fuente-america" style="color: var(--ohval-azul);">Regístrate como creador afiliado</h5>
+                                <form action="https://formsubmit.co/tu-email@ohval.com" method="POST">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" name="nombre" placeholder="Tu nombre completo" required style="border-radius: 30px;">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" name="tiktok" placeholder="Usuario de TikTok" required style="border-radius: 30px;">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="number" class="form-control" name="seguidores" placeholder="Número de seguidores" style="border-radius: 30px;">
+                                    </div>
+                                    <button type="submit" class="btn btn-ohval w-100" style="border-radius: 30px;">Quiero ser afiliado</button>
+                                </form>
+                                <p class="mt-3 small text-muted">Te contactaremos en menos de 24 horas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer-ohval text-center py-4">
+        <div class="container">
+            <p class="mb-0">© 2025 <strong>OHVAL HUB</strong> - Todos los derechos reservados</p>
+            <p class="mb-0 small">México | Moda en TikTok Shop | <span style="color: var(--ohval-coral);">#ModaQueBrilla</span></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
